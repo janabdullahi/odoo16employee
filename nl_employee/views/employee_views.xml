@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="employee_list_view">
+      <field name="name">employee list</field>
+      <field name="model">employee.employee</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- explicit form view definition -->
+    <record model="ir.ui.view" id="employee_form_view">
+      <field name="name">employee list</field>
+      <field name="model">employee.employee</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="name"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="employee_action_window">
+      <field name="name">Employee</field>
+      <field name="res_model">employee.employee</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- actions -->
+    <menuitem name="Employee" id="employee_menu_list" action="employee_action_window"/>
+
+  </data>
+</odoo>
