@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+
+        <record id="tag1_records" model="employee.category">
+            <field name="name">Sales</field>
+        </record>
+
+        <record id="tag2_records" model="employee.category">
+            <field name="name">Employee</field>
+        </record>
+
+        <record id="tag3_records" model="employee.category">
+            <field name="name">Trainer</field>
+        </record>
+        
+        <record id="tag4_records" model="employee.category">
+            <field name="name">Consultant</field>
+        </record>
+        
+    </data>
+</odoo>
