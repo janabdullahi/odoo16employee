@@ -14,7 +14,7 @@
     'category': 'Uncategorized',
     'version': '0.1',
 
-    'depends': ['base'],
+    'depends': ['base', 'hr'],
 
     # always loaded
     'data': [
