@@ -20,5 +20,6 @@
     'data': [
         'security/ir.model.access.csv',
         'views/employee_views.xml',
+        'views/employee_category_views.xml',
     ]
 }
